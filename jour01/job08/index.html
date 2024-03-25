@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Somme des nombres premiers</title>
+        <!-- Inclusion du fichier script.js -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Somme des nombres premiers</h1>
+        <p>Entrez deux nombres pour vérifier si ils sont premiers et obtenir leur somme :</p>
+        <input type="number" id="nombre1" placeholder="Entrez le premier nombre">
+        <input type="number" id="nombre2" placeholder="Entrez le deuxième nombre">
+        <button onclick="verifierSommePremiers()">Vérifier</button>
+        <p id="resultat"></p>
+
+        <script>
+            function verifierSommePremiers() {
+                var nombre1 = document.getElementById('nombre1').value;
+                var nombre2 = document.getElementById('nombre2').value;
+                var resultat = sommeNombresPremiers(nombre1, nombre2);
+                document.getElementById('resultat').textContent = resultat !== false ? "La somme est : " + resultat : "Les nombres ne sont pas premiers.";
+            }
+        </script>
+    </body>
+</html>
