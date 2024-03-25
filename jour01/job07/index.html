@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jour travaillé</title>
+        <!-- Inclusion du fichier script.js -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Vérification du jour travaillé</h1>
+        <p>Entrez une date pour vérifier si c'est un jour travaillé, un week-end, ou un jour férié :</p>
+        <input type="date" id="dateInput">
+        <button onclick="verifierJourTravaille()">Vérifier</button>
+        <p id="resultat"></p>
+
+        <script>
+            function verifierJourTravaille() {
+                var dateInput = document.getElementById('dateInput').value;
+                var date = new Date(dateInput);
+                jourTravaille(date);
+            }
+        </script>
+    </body>
+</html>
