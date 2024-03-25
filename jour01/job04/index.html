@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Année bissextile</title>
+        <!-- Inclusion d'un fichier script.js -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Année bissextile</h1>
+        <p>Entrez une année pour vérifier si elle est bissextile :</p>
+        <input type="number" id="annee" placeholder="Entrez une année">
+        <button onclick="verifierBissextile()">Vérifier</button>
+        <p id="resultat"></p>
+
+        <script>
+            function verifierBissextile() {
+                var annee = document.getElementById('annee').value;
+                var resultat = bisextile(annee) ? "L'année est bissextile." : "L'année n'est pas bissextile.";
+                document.getElementById('resultat').textContent = resultat;
+            }
+        </script>
+    </body>
+</html>
