@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tri de tableau</title>
+        <!-- Inclusion du fichier script.js -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Tri de tableau</h1>
+        <p>Entrez un tableau de nombres et choisissez l'ordre de tri (ascendant ou décroissant) :</p>
+        <input type="text" id="tableau" placeholder="Entrez un tableau de nombres séparés par des virgules">
+        <select id="ordre">
+            <option value="asc">Ascendant</option>
+            <option value="desc">Décroissant</option>
+        </select>
+        <button onclick="trierTableau()">Trier</button>
+        <p id="resultat"></p>
+
+        <script>
+            function trierTableau() {
+                var tableau = document.getElementById('tableau').value.split(',').map(Number);
+                var ordre = document.getElementById('ordre').value;
+                var resultat = tri(tableau, ordre);
+                document.getElementById('resultat').textContent = "Tableau trié :" + resultat.join(', ');
+            }
+        </script>
+    </body>
+</html>
