@@ -1,0 +1,12 @@
+body {
+    background-color: #000; /* Couleur de fond par défaut */
+    color: #fff; /* Couleur du texte par défaut */
+}
+
+/* Style pour la page */
+.stylized {
+    background-color: #0062FF; /* Couleur de fond de La Plateforme */
+    color: #FEFEFE; /* Couleur du texte de La Plateforme */
+    height: 100vh;
+    width: 100%;
+}
