@@ -1,23 +1,11 @@
-// Sélection des boutons
-var showTextButton = document.getElementById('showText');
-var hideTextButton = document.getElementById('hideText');
+$(document).ready(function() {
+    // Gestionnaire d'évènements pour le bouton "Afficher le texte"
+    $('#showText').click(function() {
+        $('#textContainer').show(); // Affiche le texte
+    });
 
-// Création de l'élément <p> pour le texte
-var textElement = document.createElement('p');
-textElement.textContent = "Les logiciels et les cathédrales, c'est un peu la même chose - d'abord, on les construit, ensuite, on prie.";
-textElement.style.display = 'none'; // Initialisation à caché
-document.body.appendChild(textElement);
-
-// Fonction pour afficher le texte
-function showText() {
-    textElement.style.display = 'block';
-}
-
-// Fonction pour cacher le texte
-function hideText() {
-    textElement.style.display = 'none';
-}
-
-// Ajout d'écouteurs d'évènements aux boutons
-showTextButton.addEventListener('click', showText);
-hideTextButton.addEventListener('click', hideText);
+    // Gestionnaire d'évènements pour le bouton "Cacher le texte"
+    $('#hideText').click(function() {
+        $('#textContainer').hide(); // Cache le texte
+    });
+});
