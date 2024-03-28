@@ -1,8 +1,6 @@
-document.getElementById('button').addEventListener('click', function() {
-    fetch('expression.txt')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('expression').textContent = data;
-        })
-        .catch(error => console.error('Erreur:', error));
-});
+document.getElementById('button').addEventListener('click', async function() {
+    let result = await fetch('expression.txt')
+    let response = await result.text()
+    console.log(response,'toto')
+    document.getElementById('expression').textContent = response;
+})
