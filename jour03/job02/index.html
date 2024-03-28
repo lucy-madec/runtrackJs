@@ -2,16 +2,26 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Arc-en-ciel</title>
         <link rel="stylesheet" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
-        <button id="shuffle">Mélanger les images</button>
-        <div id="dropZone" class="drop-zone">
-            <p>Glissez et déposez les images ici</p>
+        <div id="rainbow-container">
+            <div id="sortable-container">
+                <img src="images/arc1.png" class="rainbow-img">
+                <img src="images/arc2.png" class="rainbow-img">
+                <img src="images/arc3.png" class="rainbow-img">
+                <img src="images/arc4.png" class="rainbow-img">
+                <img src="images/arc5.png" class="rainbow-img">
+                <img src="images/arc6.png" class="rainbow-img">
+            </div>
         </div>
+        <button id="shuffle-btn">Mélanger</button>
         <div id="message"></div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
