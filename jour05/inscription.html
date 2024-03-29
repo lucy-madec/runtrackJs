@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="inscriptionForm">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+        <div id="nomError" class="error"></div>
+
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required>
+        <div id="prenomError" class="error"></div>
+
+        <label for="emailInscription">Email:</label>
+        <input type="email" id="emailInscription" name="emailInscription" required>
+        <div id="emailInscriptionError" class="error"></div>
+
+        <label for="passwordInscription">Mot de passe:</label>
+        <input type="password" id="passwordInscription" name="passwordInscription" required>
+        <div id="passwordInscriptionError" class="error"></div>
+
+        <label for="adresse">Adresse:</label>
+        <input type="text" id="adresse" name="adresse" required>
+        <div id="adresseError" class="error"></div>
+
+        <label for="codePostal">Code postal:</label>
+        <input type="text" id="codePostal" name="codePostal" required>
+        <div id="codePostalError" class="error"></div>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+
+    <script src="validation.js"></script>
+</body>
+</html>
