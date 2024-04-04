@@ -43,10 +43,12 @@
                         <div class="input-field col s6">
                             <input id="prenom" type="text" class="validate">
                             <label for="prenom">Prénom</label>
+                            <i class="material-icons prefix" style="position: absolute; right: 15px; top: 8px;">person</i>
                         </div>
                         <div class="input-field col s6">
                             <input id="nom" type="text" class="validate">
                             <label for="nom">Nom</label>
+                            <i class="material-icons prefix" style="position: absolute; right: 15px; top: 8px;">person_outline</i>
                         </div>
                     </div>
                     <div class="row">
@@ -54,19 +56,32 @@
                             <input id="email" type="email" class="validate">
                             <label for="email">Email</label>
                             <span class="helper-text" data-error="incorrect" data-success="right"></span>
-                            <i class="material-icons prefix">mail</i>
+                            <i class="material-icons prefix" style="position: absolute; right: 15px; top: 8px;">mail</i>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <input id="password" type="password" class="validate">
                             <label for="password">Mot de passe</label>
+                            <i class="material-icons prefix" style="position: absolute; right: 15px; top: 8px;">vpn_key</i>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <input id="confirm_password" type="password" class="validate">
                             <label for="confirm_password">Confirmer le mot de passe</label>
+                            <i class="material-icons prefix" style="position: absolute; right: 15px; top: 8px;">vpn_key</i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select multiple id="passions">
+                                <option value="informatique">Informatique</option>
+                                <option value="voyages">Voyages</option>
+                                <option value="sport">Sport</option>
+                                <option value="lecture">Lecture</option>
+                            </select>
+                            <label for="passions">Passions</label>
                         </div>
                     </div>
                     <div class="row">
