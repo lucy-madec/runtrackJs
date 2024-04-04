@@ -4,75 +4,99 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Page d'accueil</title>
+        <!-- Inclusion du CDN de Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="index.html">Inscription</a></li>
-                    <li><a href="index.html">Connexion</a></li>
-                    <li><a href="index.html">Rechercher</a></li>
-                </ul>
+            <nav class="blue darken-3">
+                <div class="container">
+                    <a href="#" class="brand-logo">Page d'accueil</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html">Inscription</a></li>
+                        <li><a href="index.html">Connexion</a></li>
+                        <li><a href="index.html">Rechercher</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
         <section>
-            <h2>Création de compte</h2>
-            <form action="index.html" method="post">
-                <fieldset>
-                    <legend>Civilité</legend>
-                    <input type="radio" id="monsieur" name="civilite" value="monsieur">
-                    <label for="monsieur">Monsieur</label><br>
-                    <input type="radio" id="madame" name="civilite" value="madame">
-                    <label for="madame">Madame</label><br>
-                    <input type="radio" id="autre" name="civilite" value="autre">
-                    <label for="autre">Autre</label>
-                </fieldset>
+            <div class="container">
+                <h2 class="center-align">Création de compte</h2>
+                <form action="index.html" method="post">
+                    <fieldset>
+                        <legend>Civilité</legend>
+                        <!-- Utiliser un élément select pour la civilité avec le style de Materialize -->
+                        <select class="material-select" id="civilite" name="civilite">
+                            <option value="" disabled selected>Choisissez votre civilité</option>
+                            <option value="monsieur">Monsieur</option>
+                            <option value="madame">Madame</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <label>Civilité</label>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Informations personnelles</legend>
-                    <label for="prenom">Prénom :</label>
-                    <input type="text" id="prenom" name="prenom"><br>
-                    <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom"><br>
-                    <label for="adresse">Adresse:</Address></label>
-                    <input type="text" id="adresse" name="adresse"><br>
-                </fieldset>
+                    <fieldset>
+                        <legend>Informations personnelles</legend>
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom"><br>
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom"><br>
+                        <label for="adresse">Adresse:</Address></label>
+                        <input type="text" id="adresse" name="adresse"><br>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Contact</legend>
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="password">Mot de passe :</label>
-                    <input type="password" id="password" name="password"><br>
-                    <label for="confirm_password">Confirmer le mot de passe :</label>
-                    <input type="password" id="confirm_password" name="confirm_password"><br>
-                </fieldset>
+                    <fieldset>
+                        <legend>Contact</legend>
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="password">Mot de passe :</label>
+                        <input type="password" id="password" name="password"><br>
+                        <label for="confirm_password">Confirmer le mot de passe :</label>
+                        <input type="password" id="confirm_password" name="confirm_password"><br>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Passions</legend>
-                    <input type="checkbox" id="informatique" name="passions" value="informatique">
-                    <label for="informatique">Informatique</label><br>
-                    <input type="checkbox" id="voyages" name="passions" value="voyages">
-                    <label for="voyages">Voyages</label><br>
-                    <input type="checkbox" id="sport" name="passions" value="sport">
-                    <label for="sport">Sport</label><br>
-                    <input type="checkbox" id="lecture" name="passions" value="lecture">
-                    <label for="lecture">Lecture</label><br>
-                </fieldset>
+                    <fieldset class="mb-3">
+                        <legend>Passions</legend>
+                        <!-- Utiliser un élément select pour les passions avec le style de Materialize -->
+                        <select class="material-select" id="passions" name="passions" multiple>
+                            <option value="informatique">Informatique</option>
+                            <option value="voyages">Voyages</option>
+                            <option value="sport">Sport</option>
+                            <option value="lecture">Lecture</option>
+                        </select>
+                        <label>Passions</label>
+                    </fieldset>
 
-                <button type="submit">Valider le formulaire</button>
-            </form>
+                    <div class="row center-align">
+                        <div class="col s12">
+                            <button type="submit" class="btn blue darken-3">Valider le formulaire</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <footer>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="index.html">Inscription</a></li>
-                <li><a href="index.html">Connexion</a></li>
-                <li><a href="index.html">Rechercher</a></li>
-            </ul>
+            <nav class="blue darken-3">
+                <div class="container">
+                    <ul id="footer-nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html">Inscription</a></li>
+                        <li><a href="index.html">Connexion</a></li>
+                        <li><a href="index.html">Rechercher</a></li>
+                    </ul>
+                </div>
+            </nav>
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('select');
+                var instances = M.FormSelect.init(elems);
+            });
+        </script>
     </body>
 </html>
