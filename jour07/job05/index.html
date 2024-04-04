@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Golf Page</title>
+        <!-- Inclusion du CDN de Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            /* Style personnalisé pour le thème du golf */
+            body {
+                background-color: #d0f0c0; /* Vert clair */
+            }
+            header {
+                background-color: #388e3c; /* Vert foncé */
+                color: #fff; /* Texte blanc */
+                padding: 10px 0;
+            }
+            main {
+                padding: 20px 0;
+            }
+            .card {
+                margin-bottom: 20px;
+            }
+            .card-height {
+                height: 400px; /* Hauteur fixe pour toutes les cartes */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- En-tête avec logo et liens -->
+        <header>
+            <nav class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo"><img src="logo_golf.png" alt="Logo Golf" style="height: 50px; margin-top: 5px;"></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#">Parcours</a></li>
+                        <li><a href="#">Équipement</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contenu principal avec des cartes de différentes tailles -->
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="course_golf.jpg" alt="Parcours de golf">
+                                <span class="card-title">Parcours de golf</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Découvrez nos magnifiques parcours de golf avec des vues spectaculaires.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="club_golf.webp" alt="Clubs de golf">
+                                <span class="card-title">Équipement</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Explorez notre large délection de clubs de golf haut de gamme.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="tournoi_golf.jpg" alt="Tournoi de golf">
+                                <span class="card-title">Tournois</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Participez à nos tournois de golf et montrez vos compétences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Pied de page -->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <p class="grey-text text-lighten-4">© 2024 Golf</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Initialisation du menu déroulant
+                var elems = document.querySelectorAll('.dropdown-trigger');
+                var instances = M.Dropdown.init(elems);
+            });
+        </script>
+    </body>
+</html>
