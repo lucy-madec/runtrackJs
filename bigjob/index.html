@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Plateforme_</title>
+        <!-- Inclusion du CSS de Materialzie -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Inclusion du JavaScript de Materialize -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- Inclusion du fichier CSS personnalisé -->
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Inscription</h2>
+            <form id="register-form">
+                <div class="input-field">
+                    <input id="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                    <input id="password" type="password" class="validate" required>
+                    <label for="password">Mot de passe</label>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">S'inscrire
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+        <div class="container">
+            <h2>Demande d'autorisation</h2>
+            <form id="request-form">
+                <div class="input-field">
+                    <input id="date" type="date" class="validate" required>
+                    <label for="date">Date de présence</label>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+        <div class="container">
+            <h2>Backoffice</h2>
+            <div id="requests-list"></div>
+            <button id="login-as-moderator" class="btn waves-effect waves-light">Se connecter en tant que modérateur</button>
+            <button id="login-as-admin" class="btn waves-effect waves-light">Se connecter en tant qu'administrateur</button>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
